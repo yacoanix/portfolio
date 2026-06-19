@@ -1,0 +1,23 @@
+// Colors
+$bg: #080808;
+$bg-soft: #0e0e10;
+$text: #ededf0;
+$text-dim: #9a9aa3;
+$text-faint: #5c5c64;
+$border: rgba(255, 255, 255, 0.08);
+$border-strong: rgba(255, 255, 255, 0.14);
+
+$violet: #8b5cf6;
+$blue: #3b82f6;
+$gradient: linear-gradient(120deg, $violet, $blue);
+
+// Type
+$font-display: 'Space Grotesk', system-ui, sans-serif;
+$font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+// Layout
+$max-width: 1100px;
+$gap-section: clamp(5rem, 12vw, 9rem);
+
+// Easing
+$ease: cubic-bezier(0.16, 1, 0.3, 1);
