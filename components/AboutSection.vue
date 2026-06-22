@@ -25,8 +25,8 @@
           donde importa: la arquitectura y los requisitos.
         </p>
         <p>
-          Busco un equipo donde el análisis, el diseño técnico y el backend
-          sean el núcleo del trabajo — no un trámite. Me adapto rápido a
+          Valoro los equipos donde el análisis, el diseño técnico y el backend
+          son el núcleo del trabajo — no un trámite. Me adapto rápido a
           tecnologías nuevas y trabajo en remoto o híbrido desde Las Palmas de
           Gran Canaria.
         </p>

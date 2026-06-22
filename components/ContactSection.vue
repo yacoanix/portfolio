@@ -4,12 +4,12 @@
       <div class="contact__intro">
         <p class="eyebrow">Contacto</p>
         <h2 class="heading">
-          ¿Me ves en tu <span class="gradient-text">equipo</span>?
+          ¿Hablamos de tu <span class="gradient-text">proyecto</span>?
         </h2>
         <p class="contact__text">
-          Estoy buscando un equipo donde el backend, el análisis técnico y el
-          diseño de sistemas sean el corazón del trabajo. Si eso encaja con lo
-          que construís, cuéntame.
+          Estoy abierto a nuevas oportunidades y colaboraciones donde el backend,
+          el análisis técnico y el diseño de sistemas sean el corazón del trabajo.
+          Si eso encaja con lo que construís, cuéntame.
         </p>
       </div>
 

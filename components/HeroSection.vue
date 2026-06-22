@@ -1,7 +1,7 @@
 <template>
   <section class="hero">
     <div class="container hero__inner">
-      <p class="eyebrow" ref="eyebrowRef">Disponible · Backend &amp; Full-Stack Developer</p>
+      <p class="eyebrow" ref="eyebrowRef">Backend &amp; Full-Stack Developer</p>
 
       <h1 class="hero__name" ref="nameRef">
         <span class="hero__glow" aria-hidden="true"></span>
