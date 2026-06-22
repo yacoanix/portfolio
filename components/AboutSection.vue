@@ -1,9 +1,8 @@
 <template>
   <section class="about" id="sobre-mi" ref="sectionRef">
     <div class="container about__inner">
-      <div class="about__photo" aria-hidden="true">
-        <!-- TODO: añadir foto -->
-        <span>Foto próximamente</span>
+      <div class="about__photo">
+        <img src="/foto_perfil.jpg" alt="Aymedeyacoan Rodriguez Ortega" />
       </div>
 
       <div class="about__text">
@@ -20,31 +19,30 @@
           tocar una línea de código.
         </p>
         <p>
-          También tengo frontend sólido en Vue.js y React, lo que me da visión
+          También tengo frontend sólido en Vue.js, lo que me da visión
           completa de una feature de principio a fin. Y con IA integrada en el
-          flujo — Claude, Cursor, Copilot — prototipo más rápido, detecto
-          errores antes y dedico el foco donde importa: la arquitectura y los
-          requisitos.
+          flujo, prototipo más rápido, detecto errores antes y dedico el foco
+          donde importa: la arquitectura y los requisitos.
         </p>
         <p>
           Busco un equipo donde el análisis, el diseño técnico y el backend
           sean el núcleo del trabajo — no un trámite. Me adapto rápido a
-          tecnologías nuevas y trabajo en remoto desde Las Palmas de Gran
-          Canaria.
+          tecnologías nuevas y trabajo en remoto o híbrido desde Las Palmas de
+          Gran Canaria.
         </p>
 
         <div class="about__stats">
           <div class="about__stat">
-            <strong>6+</strong>
+            <strong>{{ yearsExperience }}+</strong>
             <span>años de experiencia real</span>
           </div>
           <div class="about__stat">
             <strong>Full-Stack</strong>
-            <span>PHP · Laravel · Vue · React</span>
+            <span>PHP · Laravel · Vue.js</span>
           </div>
           <div class="about__stat">
-            <strong>Remoto</strong>
-            <span>Las Palmas / España</span>
+            <strong>Remoto / Híbrido</strong>
+            <span>Las Palmas de Gran Canaria</span>
           </div>
         </div>
       </div>
@@ -54,6 +52,8 @@
 
 <script setup>
 const sectionRef = ref(null)
+
+const yearsExperience = useYearsExperience()
 
 onMounted(() => {
   const { $gsap } = useNuxtApp()
@@ -88,15 +88,15 @@ onMounted(() => {
 .about__photo {
   aspect-ratio: 1;
   border-radius: 1rem;
-  border: 1px dashed $border-strong;
+  border: 1px solid $border-strong;
   background: $bg-soft;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-family: $font-mono;
-  font-size: 0.8rem;
-  color: $text-faint;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 .about__text p {

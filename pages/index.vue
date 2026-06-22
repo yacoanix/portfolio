@@ -6,5 +6,6 @@
     <ProjectsSection />
     <AboutSection />
     <ContactSection />
+    <SiteFooter />
   </div>
 </template>

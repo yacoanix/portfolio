@@ -37,7 +37,7 @@
             </li>
             <li>
               <span class="dot" style="background:#8b5cf6"></span>
-              6 años de proyectos reales
+              {{ yearsExperience }} años de proyectos reales
             </li>
           </ul>
           <span class="ai-card__pill">2018 &rarr; hoy</span>
@@ -72,11 +72,6 @@
               Foco en lógica de negocio, no en ruido
             </li>
           </ul>
-          <div class="ai-card__tools">
-            <span class="tool-badge">Claude</span>
-            <span class="tool-badge">Cursor</span>
-            <span class="tool-badge">Copilot</span>
-          </div>
         </div>
       </div>
 
@@ -86,11 +81,11 @@
           <span>con criterio técnico real</span>
         </div>
         <div class="stat-cell">
-          <strong>IA en el proceso</strong>
-          <span>no en el producto</span>
+          <strong>Aprendizaje continuo</strong>
+          <span>me adapto rápido a tecnologías nuevas</span>
         </div>
         <div class="stat-cell">
-          <strong>6 años de base</strong>
+          <strong>{{ yearsExperience }} años de base</strong>
           <span>más IA como co-piloto</span>
         </div>
       </div>
@@ -100,6 +95,7 @@
 
 <script setup>
 const sectionRef = ref(null)
+const yearsExperience = useYearsExperience()
 
 onMounted(() => {
   const { $gsap, $ScrollTrigger } = useNuxtApp()
@@ -220,11 +216,6 @@ onMounted(() => {
     border-radius: 999px;
   }
 
-  &__tools {
-    display: flex;
-    gap: 0.5rem;
-    flex-wrap: wrap;
-  }
 }
 
 .dot {
@@ -233,15 +224,6 @@ onMounted(() => {
   height: 10px;
   border-radius: 3px;
   flex-shrink: 0;
-}
-
-.tool-badge {
-  font-family: $font-mono;
-  font-size: 0.75rem;
-  color: $text-dim;
-  padding: 0.3rem 0.75rem;
-  border: 1px solid rgba(139, 92, 246, 0.3);
-  border-radius: 999px;
 }
 
 .stat-cell {

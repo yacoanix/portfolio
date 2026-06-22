@@ -14,6 +14,18 @@
       </div>
 
       <form class="contact__form" @submit.prevent="onSubmit">
+        <div class="field field--honeypot" aria-hidden="true">
+          <label for="company">Empresa</label>
+          <input
+            id="company"
+            v-model="form.company"
+            type="text"
+            name="company"
+            tabindex="-1"
+            autocomplete="off"
+          />
+        </div>
+
         <div class="field">
           <label for="name">Nombre</label>
           <input
@@ -72,7 +84,8 @@ const config = useRuntimeConfig()
 const form = reactive({
   name: '',
   email: '',
-  message: ''
+  message: '',
+  company: ''
 })
 
 const status = ref('idle') // idle | sending | success | error
@@ -90,6 +103,7 @@ async function onSubmit() {
     form.name = ''
     form.email = ''
     form.message = ''
+    form.company = ''
   } catch (err) {
     status.value = 'error'
   }
@@ -135,6 +149,15 @@ onMounted(() => {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
+}
+
+.field--honeypot {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .field {

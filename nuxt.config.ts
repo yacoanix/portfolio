@@ -12,10 +12,24 @@ export default defineNuxtConfig({
         {
           name: 'description',
           content: 'Desarrollador web full-stack — PHP, Laravel, Vue.js, Node.js.'
-        }
+        },
+        { property: 'og:type', content: 'profile' },
+        { property: 'og:title', content: 'Aymedeyacoan Rodriguez Ortega — Desarrollador Web' },
+        {
+          property: 'og:description',
+          content: 'Desarrollador web full-stack — PHP, Laravel, Vue.js, Node.js.'
+        },
+        { property: 'og:image', content: 'https://yacoanix.com/foto_perfil.jpg' },
+        { property: 'og:url', content: 'https://yacoanix.com' },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:title', content: 'Aymedeyacoan Rodriguez Ortega — Desarrollador Web' },
+        {
+          name: 'twitter:description',
+          content: 'Desarrollador web full-stack — PHP, Laravel, Vue.js, Node.js.'
+        },
+        { name: 'twitter:image', content: 'https://yacoanix.com/foto_perfil.jpg' }
       ],
       link: [
-        { rel: 'icon', type: 'image/png', href: '/favicon.png' },
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
         {
