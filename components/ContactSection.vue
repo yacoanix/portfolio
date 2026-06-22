@@ -198,15 +198,23 @@ onMounted(() => {
 }
 
 .contact__feedback {
+  margin-top: 0.5rem;
+  padding: 0.6rem 1rem;
+  border-radius: 0.6rem;
   font-family: $font-mono;
   font-size: 0.85rem;
+  width: fit-content;
 
   &--ok {
     color: #4ade80;
+    background: rgba(74, 222, 128, 0.1);
+    border: 1px solid rgba(74, 222, 128, 0.3);
   }
 
   &--error {
     color: #f87171;
+    background: rgba(248, 113, 113, 0.1);
+    border: 1px solid rgba(248, 113, 113, 0.3);
   }
 }
 </style>
